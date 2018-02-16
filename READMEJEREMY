@@ -1,0 +1,42 @@
+https://solo-probando.firebaseapp.com
+
+*side note- I have taken another job offer
+but i thought this project was super cool
+ and fun.
+
+
+1. Fork -> Sorry i have really bad internet and
+had to work from a coffee shop. When I uploaded
+codepin the code looked very different and being
+short on time i uploaded to firebase instead.
+
+2. Responsive -> Responsiveness and what looks
+good is always opinionated, to me it looks good.
+I could have wrote some media queries for a medium
+sized tablet but i dont think it was a requirement.
+
+3. Check
+
+4. Check
+
+5. Check
+
+6. Check
+
+*I took out the links, i couldnt get on wifi and i had
+to get it done fast, used wget to get most of the photos*
+
+No html has been changed.
+
+#INSTALLATION
+------------
+yarn install
+or if you prefer, npm,
+npm install
+
+it is installed with yarn so if you want to use npm
+you should #delete the yarn.lock file# and then npm installed
+
+#RUN
+---
+yarn start

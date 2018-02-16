@@ -1,0 +1,286 @@
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index:1;
+}
+
+/***
+  looks so much better with rounded buttons
+***/
+* a{
+  border-radius: 4px;
+}
+
+/***
+  header and footer styles
+***/
+
+header {
+
+
+  position: fixed;
+  z-index: 3;
+
+}
+header,
+footer {
+  display:flex;
+  flex-direction: row;
+
+  width: 100%;
+  height: 56px;
+  background: #19424a;
+}
+footer{
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+header h1 {
+  margin: 0;
+  padding: 8px 16px;
+  float: left;
+  color: white;
+}
+
+header p {
+  margin: 24px 0 0 50px;
+  float: left;
+  color: white;
+}
+
+/***
+  featured story styles
+***/
+#main {
+  width: 800px;
+  margin: 0 auto;
+  display:flex;
+  flex-direction: column;
+}
+
+#featuredContainer {
+  margin-top: 100px !important;
+  display:flex;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 32px 0;
+  background: url(brooks-bell.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/***
+  secondary stories styles
+***/
+#secondaryContainer {
+  width: 100%;
+  height: 350px;
+  padding: 32px 0;
+  border-top: 2px solid #4aa0b3;
+}
+
+.secondaryStoryWrapper {
+  position: relative;
+  width: 30.333%;
+  height: 100%;
+  margin: 0 1.5%;
+  float: left;
+}
+
+/***
+  tertiary styles
+***/
+#tertiaryContainer {
+  padding: 32px 0;
+  border-top: 2px solid #4aa0b3;
+  overflow: auto;
+}
+
+#tertiaryContainer img {
+  display: block;
+  width: 39%;
+  float: left;
+}
+
+#tertiaryContainer > div {
+  width: 60%;
+  padding: 8px;
+  float: right;
+}
+
+#tertiaryContainer p {
+  width: 100%;
+  font-size: 24px;
+  color: rgb(180, 180, 180);
+}
+
+#tertiaryContainer a {
+  display: block;
+  width: 70%;
+  margin: 24px auto 0;
+  padding: 12px;
+  background: #cb4c27;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+/***
+  story info styles
+***/
+.storyInfoContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 8px 16px;
+  background: rgba(50, 50, 50, .75);
+}
+
+.secondaryStoryWrapper .storyInfoContainer {
+  height: 50%;
+}
+
+.storyInfoContainer h2,
+.storyInfoContainer p {
+  margin: 4px 0;
+  color: white;
+}
+
+.storyInfoContainer a {
+  margin-left: 8px;
+  padding: 8px 16px;
+  color: white;
+  background: #cb4c27;
+  text-decoration: none;
+  ;
+}
+
+.secondaryStoryWrapper a {
+  position: absolute;
+  bottom: 0px;
+  height:40px;
+  display: block;
+  width: calc(100% - 32px);
+  margin:  0 0;
+  text-align: center;
+}
+
+.storyInfoContainer a:hover,
+.storyInfoContainer a:focus {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+
+/***
+  link style
+***/
+.linkStyle{
+  display: flex;
+  flex-direction:row;
+  justify-content: center !important;
+
+  color: white;
+}
+
+.linkStyle:hover {
+    padding: 10px;
+    color: #cb4c27;
+    font-size:2em;
+}
+
+@media only screen and (max-width: 600px) {
+    /***
+    mobile
+    ***/
+    header,
+    footer {
+      display:flex;
+      justify-content: space-around;
+      flex-direction:column !important;
+      padding: 5px !important;
+
+      height: 90px !important;
+    }
+
+    header h1 {
+      font-size: 1.75em;
+      padding:0 !important;
+    }
+
+    header p {
+      font-size:1em;
+      margin:0 !important;
+    }
+
+    #main {
+
+      width: 100% !important;
+    }
+    #featuredContainer{
+      margin-top: 100px !important;
+    }
+    .storyInfoContainer {
+
+      display:flex;
+      flex-wrap: nowrap !important;
+      flex-direction: column !important;
+    }
+    .storyInfoContainer p {
+      line-height: 2em;
+
+    }
+    .storyInfoContainer span {
+      line-height: 1em;
+      color:white;
+
+    }
+
+
+    #tertiaryContainer {
+      display: flex;
+      flex-direction:column;
+      align-items: center;
+      width: 100% !important;
+      padding: 10px;
+    }
+
+
+    #tertiaryContainer img {
+
+
+      width: 85% !important;
+      height:auto;
+
+    }
+    #tertiaryContainer > div {
+      width: 100% !important;
+      padding: 8px;
+      float: right;
+    }
+
+    #tertiaryContainer p {
+      padding: 10px !important;
+      margin-top: 1em;
+      width: 100%;
+      font-size: 24px;
+      color: rgb(180, 180, 180);
+    }
+
+    .secondaryStoryWrapper .storyInfoContainer {
+      height: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+.storyInfoContainer span {
+  display:block;
+  color:white;
+}
+}

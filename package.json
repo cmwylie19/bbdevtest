@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "name": "BROOKSBELL",
+  "version": "0.0.1",
+  "description": "Front end test.",
+  "main": "server.js",
+  "repository": "https://github.com/cmwylie19/bbdevtest.git",
+  "author": "Case Wylie",
+  "license": "MIT",
+  "private": true
+}
